@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home</title>
+        <link rel="stylesheet" href="landing_Page_styles.css">
+        <script src="jvs.js"></script>
+        
+    </head>
+
+    <body>
+        <div id="toptop">
+            <a href="landing_page.html" id="name" ><img title="Asalinto" id="icon" src="resources/icon2.png"/></a>
+            <nav class="navbar">
+                <span id="nav">
+                    <a href="about.html" id="about">About</a>
+                    <a href="work.html" id="projects">Projects</a>
+                    <a href="http://localhost/messages.php" id="message">Emails</a>
+                </span>
+            </nav>
+        </div>
+        
+        <div id="twoColumns">
+            <div class = "introduction1">
+                <h1 id="img"><img id= "change" title="picture" src="resources/kol.png"/></h1>
+                <h1>Software Engineer - Developer - ML Researcher</h1>
+            </div>
+            <div id="contact">
+                <div id = "form">
+                    <h2>Email</h2>
+                    <form method="POST" action="http://localhost/sendmessage.php">
+                        <input class="inpu" type="text" placeholder="Full name" name="fname" required/>
+                        <input class="inpu" type="email" placeholder="Email" name="email"  required/></br>
+                        <textarea class="inpu" id="msg" placeholder="Message" name="msg" rows="10" required ></textarea></br>
+                        <input class="inpu" id="btn" type="submit" value="Send" name="name"/>
+                    
+                    </form>
+                    </div>
+            </div>
+        </div>
+
+        <div id="login">
+            <div id = "login-form">
+                <h2>Login</h2>
+                <form method="POST" action="http://localhost/messages.php">
+                    <input class="inpu" type="email" placeholder="Email" name="email" required/>
+                    <input class="inpu" type="password" placeholder="Password" name="pword"  required/></br>
+                    <input class="inpu" id="btnl" type="submit" value="Login" name="name"/>
+                </form>
+                </div>
+        </div>
+
+        <div class="contact">
+            <a  onclick="contactView()">Contact</a>
+        </div>
+        
+    </body>
+
+</html>
